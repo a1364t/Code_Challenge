@@ -1,0 +1,9 @@
+<h1>All Locations</h1>
+
+<% @locations.each do |location| %>
+    <ul>
+        <li>Location: <%= link_to location.title, location %></li>
+    </ul>
+<% end %>
+
+<%= link_to "Click Here", new_location_path %> to create a new location

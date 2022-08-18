@@ -1,0 +1,9 @@
+<h1>All affiliations</h1>
+
+<% @affiliations.each do |affiliation| %>
+    <ul>
+        <li>Affiliation: <%= link_to affiliation.title, affiliation %></li>
+    </ul>
+<% end %>
+
+<%= link_to "Click Here", new_affiliation_path %> to create a new affiliation

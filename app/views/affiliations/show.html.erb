@@ -1,0 +1,10 @@
+<h1><%= @affiliation.title %></h1>
+
+<ul>
+    <li>Affiliation: <%= @affiliation.title %></li>
+</ul>
+
+<div>
+    <%= link_to 'Edit Affiliation', edit_affiliation_path %>
+    <%= link_to 'Delete Affiliation', @affiliation, :method => 'delete', :data => { :confirm => 'Are you sure?'} %>
+</div>

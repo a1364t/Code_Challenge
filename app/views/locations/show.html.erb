@@ -1,0 +1,10 @@
+<h1><%= @location.title %></h1>
+
+<ul>
+    <li>Location: <%= @location.title %></li>
+</ul>
+
+<div>
+    <%= link_to 'Edit Location', edit_location_path %>
+    <%= link_to 'Delete Location', @location, :method => 'delete', :data => { :confirm => 'Are you sure?'} %>
+</div>

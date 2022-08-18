@@ -1,0 +1,30 @@
+<h1><%= @person.first_name %></h1>
+
+<ul>
+    <li>First Name: <%= @person.first_name %></li>
+    <% if @person.last_name.present? %>
+        <li>Last Name: <%= @person.last_name %></li>
+    <% end %>
+
+    <% if @person.species.present? %>
+        <li>Species: <%= @person.species %></li>
+    <% end %>
+
+     <% if @person.gender.present? %>
+        <li>Gender: <%= @person.gender %></li>
+    <% end %>
+
+     <% if @person.weapon.present? %>
+        <li>Weapon: <%= @person.weapon %></li>
+    <% end %>
+
+     <% if @person.vehicle.present? %>
+        <li>Vehicle: <%= @person.vehicle %></li>
+    <% end %>
+    
+</ul>
+
+<div>
+    <%= link_to "Edit Person", edit_person_path(@person) %>
+    <%= link_to "Delete Person", @person, :method => 'delete', :data => {:confirm => 'Are you sure?'} %>
+</div>

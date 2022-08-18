@@ -1,0 +1,13 @@
+<h1>Search results for <%= params[:search] %></h1>
+
+
+<% if @results.present? %>
+    <ul>
+        <li>First Name: <%= @results.first_name %></li>
+        <li>Last Name: <%= @results.last_name %></li>
+    </ul>
+<% else %>
+    <p>There is no record</p>
+<% end %>
+
+ 

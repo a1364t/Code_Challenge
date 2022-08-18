@@ -1,0 +1,17 @@
+<h1>All People</h1>
+
+<div>
+    <h2>Search For People</h2>
+    <%= form_tag(people_search_path, :method => 'get') do %>
+        First Name: <%= search_field_tag(:search, params[:search], :placeholder => "Darth") %>
+        <%= submit_tag("Search") %>
+    <% end %>
+</div>
+
+<% @people.each do |person| %>
+    <ul>
+        <li>First Name: <%= link_to person.first_name, person %></li>
+    </ul>
+<% end %>
+
+<%= link_to "Click Here", new_person_path %> to create a new person
