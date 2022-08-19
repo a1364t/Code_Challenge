@@ -23,6 +23,14 @@
         <% if @results.vehicle.present? %>
             <li>Vehicle: <%= @results.vehicle %></li>
         <% end %>
+
+        <% if @results.location_id.present? %>
+            <li>Location: <%= @results.location.title.titleize %></li>
+        <% end %>
+
+        <% if @results.affiliation_id.present? %>
+            <li>Affiliation: <%= @results.affiliation.title.titleize %></li>
+        <% end %>
    
     </ul>
 <% else %>

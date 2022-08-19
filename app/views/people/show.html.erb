@@ -18,8 +18,16 @@
         <li>Weapon: <%= @person.weapon %></li>
     <% end %>
 
-     <% if @person.vehicle.present? %>
+    <% if @person.vehicle.present? %>
         <li>Vehicle: <%= @person.vehicle %></li>
+    <% end %>
+
+    <% if @person.location_id.present? %>
+        <li>Location: <%= @person.location.title.titleize %></li>
+    <% end %>
+
+    <% if @person.affiliation_id.present? %>
+        <li>Affiliation: <%= @person.affiliation.title.titleize %></li>
     <% end %>
    
 </ul>

@@ -9,8 +9,14 @@ class PeopleController < ApplicationController
     end
 
     def create
-        person = Person.create person_params
-        redirect_to people_path 
+        @person = Person.create person_params
+        if @person.save
+            flash[:message] = "New person was created successfully"
+            redirect_to root_path              
+        else
+            flash[:message] = "Validation Error"
+            render :new
+        end 
     end
 
     def edit
