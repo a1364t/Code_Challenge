@@ -9,7 +9,7 @@ a6 = Affiliation.create :title => 'Hutt Clan'
 a7 = Affiliation.create :title => 'First Order'
 a8 = Affiliation.create :title => 'The Resistance'
 
-puts "#{Affiliation.count} created"
+puts "#{Affiliation.count} affiliation created"
 
 Location.destroy_all
 l1 = Location.create :title => 'Death Star'
@@ -27,7 +27,7 @@ l12 = Location.create :title => 'Jakku'
 l13 = Location.create :title => 'Haruun Kal'
 l14 = Location.create :title => 'Cloud City'
 
-puts "#{Location.count} created"
+puts "#{Location.count} location created"
 
 Person.destroy_all
 p1 = Person.create :first_name => 'Darth', :last_name => 'Vadar', :species => 'Human', :gender => 'Male', :weapon => 'Lightsaber', :vehicle => 'Tiefighter' 
@@ -49,4 +49,4 @@ p16 = Person.create :first_name => 'C-3PO', :species => 'Human', :gender => 'Fem
 p17 = Person.create :first_name => 'Mace', :last_name => 'Windu', :species => 'Human', :gender => 'Male', :weapon => 'Lightsaber'
 p18 = Person.create :first_name => 'Lando', :last_name => 'calrissian', :species => 'Human', :gender => 'Male', :weapon => 'Blaster Pistol', :vehicle => 'Millenium Falcon'
 
-puts "#{Person.count} created"
+puts "#{Person.count} people created"

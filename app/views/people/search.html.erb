@@ -4,7 +4,26 @@
 <% if @results.present? %>
     <ul>
         <li>First Name: <%= @results.first_name %></li>
-        <li>Last Name: <%= @results.last_name %></li>
+        <% if @results.last_name.present? %>
+            <li>Last Name: <%= @results.last_name.titleize %></li>
+        <% end %>
+
+        <% if @results.species.present? %>
+            <li>Species: <%= @results.species %></li>
+        <% end %>
+
+        <% if @results.gender.present? %>
+            <li>Gender: <%= @results.gender %></li>
+        <% end %>
+
+        <% if @results.weapon.present? %>
+            <li>Weapon: <%= @results.weapon %></li>
+        <% end %>
+
+        <% if @results.vehicle.present? %>
+            <li>Vehicle: <%= @results.vehicle %></li>
+        <% end %>
+   
     </ul>
 <% else %>
     <p>There is no record</p>

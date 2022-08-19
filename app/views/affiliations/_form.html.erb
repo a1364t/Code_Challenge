@@ -2,8 +2,5 @@
     <%= f.label :title %>
     <%= f.text_field :title, :required => true %>
 
-    <%= f.label :person_id %>
-    <%= f.select :person_id, Person.pluck(:first_name, :id) %>
-
     <%= f.submit %>
 <% end %>

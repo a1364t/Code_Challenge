@@ -3,7 +3,7 @@
     <%= f.text_field :first_name, :required => true %>
 
     <%= f.label :last_name %>
-    <%= f.text_field :last_name, :required => true %>
+    <%= f.text_field :last_name %>
 
     <%= f.label :species %>
     <%= f.text_field :species %>
@@ -15,7 +15,13 @@
     <%= f.text_field :weapon %>
 
     <%= f.label :vehicle %>
-    <%= f.text_field :vehicle %>    
+    <%= f.text_field :vehicle %>
+
+    <%= f.label :location_id %>
+    <%= f.select :location_id, Location.pluck(:title, :id), :include_blank => true %> 
+
+    <%= f.label :affiliation_id %>
+    <%= f.select :affiliation_id, Affiliation.pluck(:title, :id) %>    
 
     <%= f.submit %>
 <% end %>

@@ -1,3 +1,3 @@
 class Location < ApplicationRecord
-    has_many :people
+    belongs_to :person, :optional => true
 end

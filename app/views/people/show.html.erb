@@ -3,7 +3,7 @@
 <ul>
     <li>First Name: <%= @person.first_name %></li>
     <% if @person.last_name.present? %>
-        <li>Last Name: <%= @person.last_name %></li>
+        <li>Last Name: <%= @person.last_name.titleize %></li>
     <% end %>
 
     <% if @person.species.present? %>
@@ -21,7 +21,7 @@
      <% if @person.vehicle.present? %>
         <li>Vehicle: <%= @person.vehicle %></li>
     <% end %>
-    
+   
 </ul>
 
 <div>
