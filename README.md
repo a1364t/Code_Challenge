@@ -1,6 +1,6 @@
 # Coding Test
 
-This is a coding test for Ruby on Rails position.
+This is a coding test for a Ruby on Rails position.
 
 ### How to get start
 
