@@ -6,10 +6,10 @@ This is a coding test for a Ruby on Rails position.
 
 In the project directory, run the following commands 
 ```
-To install dependencies
-bundle
+To install dependencies:
+bundle install
 
-To run the server
+To run the server:
 rails server
 ```
 
