@@ -1,6 +1,7 @@
 class PeopleController < ApplicationController
     def index
         @people = Person.all
+        @people = Person.paginate(page:params[:page])
     end
 
     def new

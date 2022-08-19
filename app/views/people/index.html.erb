@@ -55,11 +55,12 @@
                     <%= person.vehicle %>
                 <% end%>
                 </td>
-
-                
+                                                   
             </tr>
+            
         <% end %>
     <tbody>
+    <%= will_paginate(@people) %>
 </table>
 
 
