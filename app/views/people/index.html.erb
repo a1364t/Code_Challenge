@@ -1,14 +1,15 @@
-<h1>All People</h1>
+<h1 class='container'>All People</h1>
 
-<div>
-    <h2>Search For People</h2>
+<div class='container'>
+    <h4>Search For People</h4>
     <%= form_tag(people_search_path, :method => 'get') do %>
-        First Name: <%= search_field_tag(:search, params[:search], :placeholder => "Darth") %>
-        <%= submit_tag("Search") %>
+        First Name: <%= search_field_tag(:search, params[:search], :class => "form-control input", :placeholder => "Darth") %>
+        <br>
+        <%= submit_tag ("Search"), :class => "btn btn-outline-secondary" %>
     <% end %>
 </div>
 <br>
-<table>
+<table class="table">
     <thead>
             <tr>                
                 <th><%= link_to "First Name", :sort => "first_name" %></th>
@@ -25,7 +26,7 @@
     <tbody>
         <% @people.each do |person| %>
             <tr>                
-                <td><%= link_to person.first_name.titleize, person %>
+                <td><%=  person.first_name.titleize %>
                 </td>
                 <td><% if person.last_name.present?%> 
                     <%= person.last_name %>

@@ -1,30 +1,28 @@
 <%= form_for @person do |f| %>
-    <%= f.label :first_name %>
-    <%= f.text_field :first_name, :required => true %>
+    <%= f.label :first_name, :class => "form-label input" %>
+    <%= f.text_field :first_name, :required => true, :class => "form-control input" %>
 
-    <%= f.label :last_name %>
-    <%= f.text_field :last_name %>
+    <%= f.label :last_name, :class => "form-label input" %>
+    <%= f.text_field :last_name, :class => "form-control input" %>
 
-    <%= f.label :species %>
-    <%= f.text_field :species %>
+    <%= f.label :species, :class => "form-label input" %>
+    <%= f.text_field :species, :class => "form-control input" %>
 
-    <%= f.label :gender %>
-    <%= f.text_field :gender %>
+    <%= f.label :gender, :class => "form-label input" %>
+    <%= f.text_field :gender, :class => "form-control input" %>
 
-    <%= f.label :weapon %>
-    <%= f.text_field :weapon %>
+    <%= f.label :weapon, :class => "form-label input" %>
+    <%= f.text_field :weapon, :class => "form-control input" %>
 
-    <%= f.label :vehicle %>
-    <%= f.text_field :vehicle %>
-
-    <%= f.label :location_id %>
-    <%= f.select :location_id, Location.pluck(:title, :id), :include_blank => true %> 
-
-    <%= f.label :affiliation_id %>
-    <%= f.select :affiliation_id, Affiliation.pluck(:title, :id) %>    
-
-    <%= f.submit %>
-
-    
+    <%= f.label :vehicle, :class => "form-label input" %>
+    <%= f.text_field :vehicle, :class => "form-control input" %>
+    <br>
+    <%= f.label :location_id, :class => "form-label input" %>
+    <%= f.select :location_id, Location.pluck(:title, :id), :include_blank => true , :class => 'dropdown'%> 
+    <br>
+    <%= f.label :affiliation_id, :class => "form-label input" %>
+    <%= f.select :affiliation_id, Affiliation.pluck(:title, :id), :class => 'dropdown' %>    
+    <br>
+    <%= f.submit :class => "btn btn-outline-secondary" %>    
 
 <% end %>

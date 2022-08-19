@@ -31,6 +31,11 @@
         <% if @results.affiliation_id.present? %>
             <li>Affiliation: <%= @results.affiliation.title.titleize %></li>
         <% end %>
+
+    <div>
+        <%= link_to "Edit Person", edit_person_path(@results) %>
+        <%= link_to "Delete Person", @results, :method => 'delete', :data => {:confirm => 'Are you sure?'} %>
+    </div>
    
     </ul>
 <% else %>
