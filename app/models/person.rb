@@ -1,6 +1,8 @@
 class Person < ApplicationRecord
-    validates :first_name, :presence => true, :uniqueness => true
+    validates :first_name, :presence => true, :uniqueness => true, format: { with: /\A[a-zA-Z]+\z/}   
+    validates :species, format: { with: /\A[a-zA-Z]+\z/}    
+    validates :gender, format: { with: /\A(?:m|M|male|Male|f|F|female|Female)$\z/}
     has_many :affiliations
-    has_many :locations
+    has_many :locations    
     self.per_page = 10
 end
