@@ -1,24 +1,35 @@
-# README
+# Coding Test
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a coding test for Ruby on Rails position.
 
-Things you may want to cover:
+### How to get start
 
-* Ruby version
+In the project directory, run the following commands 
+```
+To install dependencies
+bundle
 
-* System dependencies
+To run the server
+rails server
+```
 
-* Configuration
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-* Database creation
+### Technologies
 
-* Database initialization
+- Ruby on Rails
+- PostgreSQL
+- Bootstrap
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+### Challenges
+* Adding pagination and sorting to the results table (the pagination interfer the functionality of the sorting table)
 
-* Deployment instructions
 
-* ...
+
+### To be implemented
+* Fix the reordering of the results in the table.
+
+### Bugs/Issues
+* Sorting functionality doesn't work when pagination is acitivated.
+
