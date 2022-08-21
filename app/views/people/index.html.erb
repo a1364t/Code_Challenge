@@ -68,3 +68,11 @@
 <br>
 <br>
 <%= link_to "Click Here", new_person_path %> to create a new person
+<br>
+<br>
+
+<h3>Import CSV File</h3>
+<%= form_tag import_people_path, multipart: true do %>
+    <%= file_field_tag :file %>
+    <%= submit_tag "Upload File" %>
+<% end %>

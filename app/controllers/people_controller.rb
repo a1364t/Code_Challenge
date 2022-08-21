@@ -41,8 +41,12 @@ class PeopleController < ApplicationController
 
     def search        
         @parameter = params[:search]
-        @results = Person.find_by first_name: params[:search]
-        
+        @results = Person.find_by first_name: params[:search]        
+    end
+
+    def import
+        Person.import(params[:file])
+        redirect_to root_path
     end
 
     private
