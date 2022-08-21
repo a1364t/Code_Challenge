@@ -24,12 +24,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### Challenges
 * Adding pagination and sorting to the results table (the pagination interfer the functionality of the sorting table)
+* Adding CSV uploader function to the app
 
 
 
 ### To be implemented
 * Fix the reordering of the results in the table.
 
+
 ### Bugs/Issues
 * Sorting functionality doesn't work when pagination is acitivated.
+* CSV file doesn't upload to the database
 
