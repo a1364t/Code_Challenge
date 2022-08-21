@@ -1,15 +1,15 @@
 # Coding Test
 
-This is a coding test for Ruby on Rails position.
+This is a coding test for a Ruby on Rails position.
 
 ### How to get start
 
 In the project directory, run the following commands 
 ```
-To install dependencies
+To install dependencies:
 bundle
 
-To run the server
+To run the server:
 rails server
 ```
 
